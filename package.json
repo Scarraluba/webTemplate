@@ -1,0 +1,17 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "admin",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w frontend",
+    "dev:admin": "npm run dev -w admin",
+    "build": "npm run build -w frontend && npm run build -w admin",
+    "build:frontend": "npm run build -w frontend",
+    "build:admin": "npm run build -w admin"
+  }
+}
